@@ -1,0 +1,795 @@
+/*
+
+About
+  Careers
+  Events
+  Products
+  Support
+ Immersive experiences that deliver
+
+  The leader in interactive VR
+
+  Founded in 2011, Loopstudios has been producing world-class virtual reality 
+  projects for some of the best companies around the globe. Our award-winning 
+  creations have transformed businesses through digital experiences that bind 
+  to their brand.
+
+  Our creations
+
+  See all
+
+  Deep earth
+  Night arcade
+  Soccer team VR
+  The grid
+  From up above VR
+  Pocket borealis
+  The curiosity
+  Make it fisheye
+
+  About
+  Careers
+  Events
+  Products
+  Support
+
+  © 2021 Loopstudios. All rights reserved.
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+:root{
+    --clr-white:  hsl(0, 0%, 100%);
+    --clr-black:    hsl(0, 0%, 0%);
+    --dark-grey:   hsl(0, 0%, 55%);
+    --verydark-grey: hsl(0, 0%, 41%);
+}
+
+
+
+body{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
+    color: var(--clr-white);
+}
+
+
+
+.header{
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 1200;
+    
+}
+
+.wrapper{
+    width: 85%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.wrap{
+    width: 85%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo{
+    width: 200px;
+    position: relative;
+    z-index: 2000;
+}
+.header-container{
+    width: 85%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    list-style: none;
+}
+
+
+
+
+
+.navlink{
+    color: var(--clr-white);
+    font-size: 1.2rem;
+    font-weight: 300;
+    position: relative;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: .5s ease;
+}
+
+.navlink::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    transform-origin: center;
+    height: 2px;
+    width: 45%;
+    background-color: white;
+    transition: .5s ease;
+}
+
+.navlink:hover::after{
+    transform:  translateX(-50%) scale(1);
+}
+
+
+.navtoggle{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+    z-index: 2000;
+    position: relative;
+}
+
+
+
+/* Hero section Styling here */
+
+
+
+.hero{
+    height: auto;
+    width: 100%;
+    padding-top: 220px;
+    padding-bottom: 220px;
+    background-image:linear-gradient(rgba(33, 5, 33, 0.836),rgba(59, 9, 59, 0.641)), url(./images/desktop/image-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 85%;
+    max-width: 1200px;
+}
+
+.herocontent{
+    display: flex;
+    width: fit-content;
+    padding: 20px 160px 20px 20px;
+    border: 2px solid var(--clr-white);
+}
+
+.herocontent h1{
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+
+
+
+/*Interactive leaders section styles here ---------*/
+
+.leaders{
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-white);
+}
+
+.leader-container{
+    width: 85%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+   
+}
+
+.col1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+
+}
+
+.col2{
+    color: var(--verydark-grey);
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    width: 50%;
+    background-color: white;
+   padding: 30px 0px 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    
+    gap: 15px;
+}
+
+.col2 h2{
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.col2 p{
+    font-size: 1rem;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    width: 100%;
+}
+
+
+
+/* Creations section styles here -----------*/
+
+
+.creations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.creations-container{
+    width: 85%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--clr-white);
+}
+
+.createtitlebar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.creations-container h3{
+    font-size: 2rem;
+    color: var(--dark-grey);
+    text-transform: uppercase;
+    font-weight: 300;
+
+}
+
+.seemore{
+    padding: 10px 30px;
+    border: 2px solid var(--clr-black);
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--clr-black);
+    text-transform: uppercase;
+    transition: .5s ease;
+}
+
+.seemore:hover,
+.seemore:focus{
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
+
+.gridcontainer{
+    margin-top: 30px;
+    width: 85%;
+    max-width: 1200px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.card{
+    background-image: url(./images/desktop/image-deep-earth.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;height:450px;
+    position: relative;
+    object-fit: cover;
+}
+
+.card:nth-child(2){
+    background-image: url(./images/desktop/image-night-arcade.jpg);
+}
+.card:nth-child(3){
+    background-image: url(./images/desktop/image-soccer-team.jpg);
+}
+.card:nth-child(4){
+    background-image: url(./images/desktop/image-grid.jpg);
+}
+.card:nth-child(5){
+    background-image: url(./images/desktop/image-from-above.jpg);
+}
+.card:nth-child(6){
+    background-image: url(./images/desktop/image-pocket-borealis.jpg);
+}
+.card:nth-child(7){
+    background-image: url(./images/desktop/image-curiosity.jpg);
+}
+.card:nth-child(8){
+    background-image: url(./images/desktop/image-fisheye.jpg);
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
+    transition: .5s ease;
+}
+
+.cardh3{
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-weight: 300;
+    z-index: 4;
+    isolation: isolate;
+    z-index: 300;cursor: pointer;
+    transition: .5s ease;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+}
+
+.card:hover .overlay{
+    background-color: rgba(255, 255, 255, 0.691);
+}
+
+.card:hover .cardh3{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer styling here ---------*/
+
+.footer{
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-black);
+}
+
+.footercontainer{
+    width: 85%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerinfo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.footernavlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    list-style: none;
+}
+
+
+
+
+
+.footernavlink{
+    color: var(--clr-white);
+    font-size: 1rem;
+    
+    position: relative;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: .5s ease;
+}
+
+.footernavlink:first-child{
+   padding-left: 0;
+}
+
+.footernavlink::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    transform: translateX(-35%) scale(0);
+    
+    height: 2px;
+    width: 45%;
+    background-color: white;
+    transition: .5s ease;
+}
+
+.footernavlink:hover::after{
+    transform:  translateX(-35%) scale(1);
+}
+
+.social{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sociallist{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
+    gap: 15px;
+}
+
+.social h5{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--dark-grey);
+}
+
+
+/* Attribtuion styleing here */
+
+.attribution{
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--clr-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@media(max-width: 975px) {
+    .gridcontainer{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card{
+        height: 560px;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .navlist{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: var(--clr-black);
+        z-index: 1000;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30px;
+        gap: 30px;
+        clip-path: inset(0 0 100% 0);
+        transition: .5s ease-out;
+
+    }
+
+
+
+    .openmenu{
+        clip-path: inset(0 0 0 0);
+    }
+
+
+    .logo{
+        width: 120px;
+    }
+
+    .col1{
+        width: 100%;
+    }
+
+    .col2{
+        position: static;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leader-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+       
+    }
+
+    .header-container{
+        width: 90%;
+        display: flex;
+        
+        
+        flex-shrink: 1;
+    }
+
+    .navlink{
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    .navtoggle{
+        display: block;
+    }
+}
+
+
+@media (max-width: 693px) {
+    .gridcontainer{
+        grid-template-columns: 1fr;
+    }
+
+    .card{
+        height: 200px;
+        background-image: url(./images/mobile/image-deep-earth.jpg);
+        background-position: top center;
+    }
+
+    .card:nth-child(2){
+        background-image: url(./images//mobile/image-night-arcade.jpg);
+    }
+    .card:nth-child(3){
+        background-image: url(./images/mobile/image-soccer-team.jpg);
+    }
+    .card:nth-child(4){
+        background-image: url(./images/mobile/image-grid.jpg);
+    }
+    .card:nth-child(5){
+        background-image: url(./images/mobile/image-from-above.jpg);
+    }
+    .card:nth-child(6){
+        background-image: url(./images/mobile/image-pocket-borealis.jpg);
+    }
+    .card:nth-child(7){
+        background-image: url(./images/mobile/image-curiosity.jpg);
+    }
+    .card:nth-child(8){
+        background-image: url(./images/mobile/image-fisheye.jpg);
+    }
+
+    .herocontent h1{
+        font-size: 9vw;
+    }
+
+
+}
+
+@media (max-width: 471px) {
+    .attribution{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 704px){
+    .herocontent{
+        width: fit-content;
+        padding: 10px;
+        
+    }
+
+    .header{
+        background-color: black;height: 90px;
+    }
+
+    .herocontent h1{
+        font-size: 3rem;
+    }
+
+    .col2{
+        padding: 0;
+
+    }
+
+    .leader-container{
+        gap: 25px;
+        width: 80%;
+    }
+
+    .col2 h2{
+        font-size: 8vw;
+        line-height: 1.2;
+    }
+
+    .col2 p{
+        font-size: 1rem;
+        width: 95%;
+    }
+
+    .container{
+        width: fit-content;
+    }
+
+    .wrapper{
+        width: 85%;
+    }
+
+    .gridcontainer{
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .imgcard{
+        height: 250px;
+    }
+
+    .footernavlist{
+        flex-direction: column;gap: 20px;
+    }
+    .creations{
+        padding-bottom: 140px;
+        position: relative;
+        
+    }
+
+    .createtitlebar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .seemore{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footerinfo{
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .social{
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        width: 100%
+    }
+
+    .footernavlink{
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+
+    .footernavlink::after{
+        left: 30%;
+        
+    }
+
+    .imgcard img{
+        width: 100%;
+    }
+
+    .footercontainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media(max-width: 407px) {
+    .herocontent h1{
+        font-size: 12vw;
+    }
+}
+
+@media (max-width: 375px) {
+    .gridcontainer{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card{
+        height: 145px;
+        background-image: url(./images/mobile/image-deep-earth.jpg);
+        background-position: top center;
+    }
+
+    .cardh3{
+        font-size: 1.4rem;
+        bottom: 15px;
+        left: 10px;
+    }
+
+
+}
+
